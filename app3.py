@@ -13,9 +13,9 @@ from sentence_transformers import SentenceTransformer, util
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 model = AutoModel.from_pretrained("bert-base-uncased")
 
-# Load the BERT-based GMM model
-gmm_model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
-
+# Load the BERT-based GMM model 
+gmm_model = SentenceTransformer("paraphrase-MiniLM-L6-v2")         #This is a sentence-transformers model: 
+  
 app = Flask(__name__)
 
 def read_article(data):
